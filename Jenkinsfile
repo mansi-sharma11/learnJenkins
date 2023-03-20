@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Compile') {
             steps {
-                withMaven( maven: 'maven3;){
+                withMaven( maven: 'maven3'){
                 sh 'mvn compile'
             }
         }
