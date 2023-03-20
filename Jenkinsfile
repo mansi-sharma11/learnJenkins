@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             when {
                 not {
-                    failed()
+                  echo 'IN NOT BLOCK'
                 }
             }
             steps {
